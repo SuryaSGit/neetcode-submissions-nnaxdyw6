@@ -10,6 +10,10 @@
  * };
  */
 
+
+// First value of preorder is root. So, anything to the left of that in inorder
+// is in left subtree. So we can use this to recurse and make subtrees.
+// Increment global var tracking updated nodes so far.
 class Solution {
 public:
     int temp = 0;
